@@ -1,7 +1,7 @@
 import numpy as np 
 import cv2
 
-img = cv2.imread("testing2_white.jpg", 0)
+img = cv2.imread("negative_example1.jpg", 0)
 
 cv2.namedWindow("image", cv2.WINDOW_NORMAL)
 

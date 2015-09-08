@@ -5,13 +5,13 @@ disp("Loading the image and neural network parameters...");
 disp("------------------------------------");
 disp("\n");
 
-load("negative_example1.dat");
+load("nnex2.dat");
 load("theta1.dat");
 load("theta2.dat");
 
 disp(theta2(1));
 
-X = negative_example1;
+X = nnex2;
 disp(size(X));
 
 m = size(X, 1);

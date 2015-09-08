@@ -2,21 +2,21 @@
 
 input_layer_size = 0;  % input features
 hidden_layer_size = 125; % Number of nodes in the hidden layer
-num_output = 1; %The number of classes is just one. It returns if the signature is the trained signature or not
+num_output = 2; %The number of classes is just one. It returns if the signature is the trained signature or not
 
 disp("\n");
 disp("---------------------------------------");
 disp("Loading Data...");
 disp("\n");
-load("sig_data_X.dat");
-load("sig_data_y.dat");
+load("sig_data_X_2.dat");
+load("sig_data_y_2.dat");
 
-X = sig_data_X;
-y = sig_data_y;
+X = sig_data_X_2;
+y = sig_data_y_2;
 
 % size of the training data
-m = size(sig_data_X, 1);
-input_layer_size = size(sig_data_X, 2);
+m = size(sig_data_X_2, 1);
+input_layer_size = size(sig_data_X_2, 2);
 
 
 disp("Dimensions of training data:");

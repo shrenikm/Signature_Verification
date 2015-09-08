@@ -22,6 +22,10 @@ X = [ones(m, 1), X];
 
 for i=1:m
 
+	% vectorized y
+	yy = 1:num_output;
+	yy = (yy == y(i));
+
 	z2 = X(i, 1:end)*(theta1');
 	a2 = sigmoid(z2);
 	a2 = [1, a2];
@@ -31,7 +35,10 @@ for i=1:m
 	ha = log(a3);
 	hb = log(1-a3);
 		
-	J = J + ((-y(i)*ha) - ((1-y(i))*(hb)));
+	for j=1:num_output
+		
+		J = J + ((-yy(j)*ha(j)) - ((1-yy(j))*(hb(j))));
+	end;
 	
 end;
 

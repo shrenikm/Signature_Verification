@@ -4,13 +4,13 @@
 disp("Loading neural network parameters and training data...");
 load("theta1.dat");
 load("theta2.dat");
-load("sig_data_X.dat");
+load("sig_data_X_2.dat");
 
 disp(size(theta1));
 disp(size(theta2));
 disp(theta2(1));
 
-X = sig_data_X;
+X = sig_data_X_2;
 m = size(X, 1);
 X = [ones(m,1), X];
 
