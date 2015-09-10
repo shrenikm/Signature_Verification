@@ -1,7 +1,7 @@
 import numpy as np 
 import cv2 
 
-img_name = "nnex2.jpg"
+img_name = "nex2.jpg"
 dat_name = img_name[:-3]+"dat"
 
 im = cv2.imread(img_name, 0)

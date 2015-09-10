@@ -1,20 +1,22 @@
 import numpy as np 
 import cv2
 
-img = cv2.imread("negative_example1.jpg", 0)
+img = cv2.imread("paper_2_ninv.jpg", 0)
 
 cv2.namedWindow("image", cv2.WINDOW_NORMAL)
 
 rows, cols = img.shape
 
-ret, imgth = cv2.threshold(img, 135, 255, cv2.THRESH_BINARY)
+# ret, imgth = cv2.threshold(img, 135, 255, cv2.THRESH_BINARY)
+
+img = cv2.bitwise_not(img)
 
 
-imgth_resized = cv2.resize(imgth, (50, 50)) 
+img_resized = cv2.resize(img, (50, 50)) 
 
-cv2.imwrite("negative_example1.jpg", imgth_resized)
+cv2.imwrite("paper_2_final.jpg", img_resized)
 
-cv2.imshow("image", imgth)
+cv2.imshow("image", img_resized)
 
 
 

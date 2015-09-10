@@ -5,13 +5,13 @@ disp("Loading the image and neural network parameters...");
 disp("------------------------------------");
 disp("\n");
 
-load("nnex2.dat");
+load("pex1.dat");
 load("theta1.dat");
 load("theta2.dat");
 
 disp(theta2(1));
 
-X = nnex2;
+X = pex1;
 disp(size(X));
 
 m = size(X, 1);
@@ -28,3 +28,6 @@ disp("\n");
 disp("----------------------------------");
 disp("Output: ");
 disp(a3);
+
+disp("sum:");
+disp(sum(a3));

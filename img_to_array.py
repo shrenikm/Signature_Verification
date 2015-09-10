@@ -1,11 +1,11 @@
 import numpy as np 
 import cv2
 
-im = cv2.imread("positive_example1.jpg", 0)
+im = cv2.imread("paper_2_final.jpg", 0)
 
 cv2.namedWindow("image", cv2.WINDOW_NORMAL)
 
-fil = open("positive_example1.dat", "a")
+fil = open("paper_2_final.dat", "a")
 
 rows, cols = im.shape
 
